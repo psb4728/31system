@@ -1,0 +1,27 @@
+<nav class="nav inner">
+  <h1 class="logo">
+    <a href="../index.html"><img src="../images/logo.svg" alt="31system"></a>
+  </h1>
+  <ul>
+    <li><a href="/page/info.html">회사소개</a></li>
+    <li><a href="/page/business.html">사업영역</a></li>
+    <li><a href="/page/contact.html">제휴문의</a></li>  
+    <li><a href="/page/notice.html">공지사항</a></li>
+  </ul>
+
+  <!-- hamburger btn -->
+  <div class="ham_btn">
+    <a href="javscript:void()"></a>
+    <a href="javscript:void()"></a>
+    <a href="javscript:void()"></a>
+  </div>
+</nav>
+
+<script>
+  $(function() {
+    $('.ham_btn').on('click', function() {
+      $(this).toggleClass('open');
+      $('.header').toggleClass('open');
+    });
+  });
+</script>
