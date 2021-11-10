@@ -268,19 +268,19 @@
 .main_visual {
   width: 100%;
   height: 100vh;
-  background: url("/images/info_main.png") no-repeat;
+  background: url("../images/info_main.png") no-repeat;
   background-size: cover;
 }
 .main_visual.business {
-  background: url("/images/business_main.png") no-repeat;
+  background: url("../images/business_main.png") no-repeat;
   background-size: cover;
 }
 .main_visual.contact {
-  background: url("/images/contact_main.png") no-repeat;
+  background: url("../images/contact_main.png") no-repeat;
   background-size: cover;
 }
 .main_visual.notice {
-  background: url("/images/notice_main.png") no-repeat;
+  background: url("../images/notice_main.png") no-repeat;
   background-size: cover;
 }
 .main_visual .text_wrap {
