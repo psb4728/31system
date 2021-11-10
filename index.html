@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=yes" name="viewport" />
+  <meta name="author" content="31system" />
+  <meta name="description" content="안녕하세요 주식회사 삼일시스템입니다." />
+  <meta name="Keywords" content="31SYSTEM, 31system, 삼일시스템, 결제 시스템, 삼일시스템, 주식회사삼일시스템, 주식회사 삼일시스템, 결제서비스, 전자결제, PG사, pg" />
+  <title>31SYSTEM</title>
+
+  <!-- og -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="유사투자 소비자 피해구제 센터" />
+  <meta property="og:title" content="유사투자 소비자 피해구제 센터" />
+  <meta property="og:description" content="안녕하세요 주식회사 삼일시스템입니다." />
+  <meta property="og:url" content="#" />
+  <meta property="og:image" content="./images/kakao_img.png" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="400" />
+
+  <!-- twitter -->
+  <meta name="twitter:title" content="주식회사 삼일시스템입니다." />
+  <meta name="twitter:description" content="안녕하세요 주식회사 삼일시스템입니다." />
+  <meta name="twitter:url" content="#" />
+  <meta name="twitter:image" content="./images/kakao_img.png" />
+
+  <!-- Faivicon -->
+  <link rel="icon" type="image/png" href="/images/favicon.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+
+  <!-- jQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <!-- kakao map -->
+  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=433b5e22f57efe6b1ccc1699fd23f122&libraries=services"></script>
+
+  <!-- Js -->
+  <script src="js/map.js" defer></script>
+  <script src="js/common.js" defer></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header" class="header"></header>
+
+  <main class="main">
+    <div class="inner main_wrap">
+      <h2 class="title">차별화된 결제시스템</h2>
+      <h3 class="sub_title">31SYSTEM</h3>
+      <a href="#" class="que_btn">문의하기<i class="xi-angle-right"></i></a>
+    </div>
+  </main>
+
+  <!-- visual -->
+  <article class="container visual_wrap show-on-scroll">
+    <div class="inner">
+      <div class="text_wrap">
+        <h4>차별화된 결제방식을 제공하는<br>PG시스템 전문 기업 31SYSTEM</h4>
+        <p>
+          고객과의 신뢰를 최우선으로하는 기업, 31SYSTEM입니다.<br>
+          전자상거래 소프트웨어를 전문적으로 개발하는 기업으로,<br>
+          다년간의 노하우를 가지고 항상 서비스 품질 향상을 위해 노력합니다.
+        </p>
+      </div>
+      <div class="img_wrap">
+        <img src="/images/phone_img.png" alt="31system">
+      </div>
+    </div>
+  </article>
+
+  <!-- link_wrap -->
+  <div class="container">
+    <article class="link_wrap show-on-scroll">
+      <ul>
+        <li>
+          <a href="info.html">
+            <div class="link_box item1">
+              <h5>고객의 곁에서 늘 가까이 함께하는 삼일시스템</h5>
+              <p>
+                신뢰와 존중을 바탕으로 고객을 최우선으로 생각하는 기업 31SYSTEM입니다.<br>
+                언제나 고객의 곁에서 늘 가까이 함께하겠습니다.
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="link_box item2">
+              <h5>차별화된 결제시스템, PLUSPAY</h5>
+              <p>
+                저희 31SYSTEM에서 운영하는 결제대행 PG사,<br>
+                플러스페이는 다년간의 노하우를 가지고 체계적으로 운영하고 관리합니다.
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="link_box item3">
+              <h5>제휴문의</h5>
+              <p>
+                31SYSTEM은 사업제휴, 투자, 마케팅 등 어떤 문의도 환영합니다.<br>
+                언제든지 문의주시면 친절히 상담해 드리겠습니다
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="link_box item4">
+              <h5>공지사항</h5>
+              <p>
+                결제시스템 제공 안내 / 영업시간 안내 등<br>
+                31SYSTEM의 다양한 소식을 확인해보세요
+              </p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </article>
+  </div>
+
+
+  <!-- Map -->
+  <article class="container map_container">
+    <div class="inner">
+      <h4>찾아오는 길</h4>
+      <div class="map_wrap">
+        <div id="map"></div>
+        <div class="map_footer">
+          <p>
+            인천광역시 연수구 송도동 10-7, 7층<br>
+            (송도동, 송도 GTX센트럴)
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+
+  <!-- Footer -->
+  <footer id="footer" class="footer"></footer>
+
+
+  <script>
+    $(function () {
+      $("#header").load("/common/header.html");
+      $("#footer").load("/common/footer.html");
+    });
+  </script>
+</body>
+
+</html>
