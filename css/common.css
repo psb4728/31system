@@ -740,7 +740,7 @@ html, body {
     height: 70vh;
   }
   .main .main_wrap {
-    animation-name: notebook_2;
+    animation: none;
   }
 
   .main_visual .text_wrap h2 {
