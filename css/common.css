@@ -645,12 +645,12 @@ html, body {
   0% {
     background-position: bottom -700px center;
     background-position-x: 50%;
-    background-position-y: 700px;
+    background-position-y: -700px;
   }
   100% {
     background-position: bottom -100px center;
     background-position-x: 50%;
-    background-position-y: 100px;
+    background-position-y: -100px;
   }
 }
 @keyframes text_show {
