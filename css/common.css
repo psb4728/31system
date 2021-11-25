@@ -362,7 +362,6 @@ html, body {
   -webkit-background-size: 70%;
   background-position: bottom -700px center;
   background-position-x: 50%;
-  background-position-y: bottom -700px;
   box-sizing: border-box;
   overflow: hidden;
   animation: notebook 1.4s ease-in-out forwards;
@@ -536,26 +535,22 @@ html, body {
   -webkit-background-size: cover;
   background-position: top 200px center;
   background-position-x: 50%;
-  background-position-y: top 200px;
   transition: background-position 0.5s ease-in-out;
 }
 .link_wrap ul li .link_box.item2 {
   background: url("../images/main_img2.png") no-repeat;
   background-position: top -60px left 300px;
   background-position-x: left 300px;
-  background-position-y: top -60px;
 }
 .link_wrap ul li .link_box.item3 {
   background: url("../images/main_img3.png") no-repeat;
   background-position: top 60px left -60px;
   background-position-x: left -60px;
-  background-position-y: top 60px;
 }
 .link_wrap ul li .link_box.item4 {
   background: url("../images/main_img5.png") no-repeat;
   background-position: top 30px right 0px;
   background-position-x: right 0px;
-  background-position-y: top 30px;
 }
 .link_wrap ul li .link_box h5 {
   font-size: 2.4rem;
@@ -621,36 +616,30 @@ html, body {
   0% {
     background-position: bottom -700px center;
     background-position-x: 50%;
-    background-position-y: 700px;
   }
   100% {
     background-position: bottom -300px center;
     background-position-x: 50%;
-    background-position-y: 300px;
   }
 }
 @keyframes notebook_1 {
   0% {
     background-position: bottom -700px center;
     background-position-x: 50%;
-    background-position-y: 700px;
   }
   100% {
     background-position: bottom -200px center;
     background-position-x: 50%;
-    background-position-y: 200px;
   }
 }
 @keyframes notebook_2 {
   0% {
     background-position: bottom -700px center;
     background-position-x: 50%;
-    background-position-y: -700px;
   }
   100% {
     background-position: bottom -100px center;
     background-position-x: 50%;
-    background-position-y: -100px;
   }
 }
 @keyframes text_show {
@@ -667,7 +656,6 @@ html, body {
     -webkit-background-size: contain;
     background-position: bottom center;
     background-position-x: 50%;
-    background-position-y: bottom 0%;
   }
 
   .link_wrap ul {
