@@ -362,7 +362,7 @@ html, body {
   -webkit-background-size: 70%;
   background-position: bottom -700px center;
   background-position-x: 50%;
-  background-position-y: bottom -700px;
+  background-position-y: 700px;
   box-sizing: border-box;
   overflow: hidden;
   animation: notebook 1.4s ease-in-out forwards;
@@ -620,36 +620,36 @@ html, body {
   0% {
     background-position: bottom -700px center;
     background-position-x: 50%;
-    background-position-y: bottom -700px;
+    background-position-y: 700px;
   }
   100% {
     background-position: bottom -300px center;
     background-position-x: 50%;
-    background-position-y: bottom -300px;
+    background-position-y: 300px;
   }
 }
 @keyframes notebook_1 {
   0% {
     background-position: bottom -700px center;
     background-position-x: 50%;
-    background-position-y: bottom -700px;
+    background-position-y: 700px;
   }
   100% {
     background-position: bottom -200px center;
     background-position-x: 50%;
-    background-position-y: bottom -200px;
+    background-position-y: 200px;
   }
 }
 @keyframes notebook_2 {
   0% {
     background-position: bottom -700px center;
     background-position-x: 50%;
-    background-position-y: bottom -700px;
+    background-position-y: 700px;
   }
   100% {
     background-position: bottom -100px center;
     background-position-x: 50%;
-    background-position-y: bottom -100px;
+    background-position-y: 100px;
   }
 }
 @keyframes text_show {
