@@ -362,7 +362,7 @@ html, body {
   -webkit-background-size: 70%;
   background-position: bottom -700px center;
   background-position-x: 50%;
-  background-position-y: 700px;
+  background-position-y: bottom -700px;
   box-sizing: border-box;
   overflow: hidden;
   animation: notebook 1.4s ease-in-out forwards;
@@ -665,9 +665,9 @@ html, body {
   .main .main_wrap {
     background-size: contain;
     -webkit-background-size: contain;
-    background-position: top center;
+    background-position: bottom center;
     background-position-x: 50%;
-    background-position-y: top 0%;
+    background-position-y: bottom 0%;
   }
 
   .link_wrap ul {
