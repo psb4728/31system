@@ -94,7 +94,7 @@
 
 @media screen and (max-width: 900px) {
   .main_visual.notice {
-    background-position: center left -400px;
+    background-position: center left -700px;
   }
 
   .notice_wrap .notice_list .list {

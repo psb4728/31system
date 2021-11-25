@@ -17,7 +17,7 @@
   <meta property="og:site_name" content="유사투자 소비자 피해구제 센터" />
   <meta property="og:title" content="유사투자 소비자 피해구제 센터" />
   <meta property="og:description" content="안녕하세요 주식회사 삼일시스템입니다." />
-  <meta property="og:url" content="#" />
+  <meta property="og:url" content="samilsystem.com" />
   <meta property="og:image" content="./images/kakao_img.png" />
   <meta property="og:image:width" content="800" />
   <meta property="og:image:height" content="400" />
@@ -25,7 +25,7 @@
   <!-- twitter -->
   <meta name="twitter:title" content="주식회사 삼일시스템입니다." />
   <meta name="twitter:description" content="안녕하세요 주식회사 삼일시스템입니다." />
-  <meta name="twitter:url" content="#" />
+  <meta name="twitter:url" content="samilsystem.com" />
   <meta name="twitter:image" content="./images/kakao_img.png" />
 
   <!-- Faivicon -->
@@ -48,6 +48,12 @@
 </head>
 
 <body>
+  <!-- Skip -->
+  <div id="skip_nav">
+    <a href="#main">본문 바로가기</a>
+    <a href="#map_container">찾아오는 길 바로가기</a>
+  </div>
+
   <!-- Header -->
   <header id="header" class="header"></header>
 
@@ -77,7 +83,7 @@
   </article>
 
   <!-- link_wrap -->
-  <div class="container">
+  <div class="container" id="main">
     <article class="link_wrap show-on-scroll">
       <ul>
         <li>
@@ -130,7 +136,7 @@
 
 
   <!-- Map -->
-  <article class="container map_container">
+  <article class="container map_container" id="map_container">
     <div class="inner">
       <h4>찾아오는 길</h4>
       <div class="map_wrap">
@@ -152,8 +158,8 @@
 
   <script>
     $(function () {
-      $("#header").load("./header.html");
-      $("#footer").load("./footer.html");
+      $("#header").load("/common/header.html");
+      $("#footer").load("/common/footer.html");
     });
   </script>
 </body>

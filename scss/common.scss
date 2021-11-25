@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+html,body { overflow-x: hidden; }
+
 // Layout
 .container {
   position: relative;
@@ -14,6 +16,29 @@
   margin: auto;
   box-sizing: border-box;
 }
+
+
+// Skip
+#skip_nav {
+  position: relative;
+  z-index: 9999;
+  a {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 200px;
+    line-height: 40px;
+    color: #fff;
+    border: none;
+    background-color: var(--blur-color);
+    &:focus,
+    &.active {
+      top: 0;
+      outline: none;
+    }
+  }
+}
+
 
 
 // Header
@@ -291,21 +316,29 @@
   height: 100vh;
   background: url('/images/info_main.png') no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
+  background-attachment: fixed;
   &.business {
     background: url('/images/business_main.png') no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
   }
   &.contact {
     background: url('/images/contact_main.png') no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
   }
   &.notice {
-    background: url('/images/notice_main.png') no-repeat;
+    background: url('/images/notice_main2.png') no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
   }
   .text_wrap {
     text-align: right;
-    padding-top: 12rem;
+    padding-top: 22rem;
     color: #fff;
     box-sizing: border-box;
     h2 {
@@ -334,7 +367,7 @@
 // index.html
 .main {
   position: relative;
-  height: 80vh;
+  height: 90vh;
   padding-bottom: 20px;
   box-sizing: border-box;
   &::after {
@@ -351,7 +384,10 @@
     height: 100%;
     background: url('/images/notebook_img.png') no-repeat;
     background-size: 70%;
+    -webkit-background-size: 70%;
     background-position: bottom -700px center;
+    background-position-x: 50%;
+    background-position-y: bottom -700px;
     box-sizing: border-box;
     overflow: hidden;
     animation: notebook 1.4s ease-in-out forwards;
@@ -360,7 +396,7 @@
     font-size: 4.8rem;
     font-weight: 600;
     letter-spacing: .6rem;
-    padding: 10rem 0 3rem;
+    padding: 18rem 0 3rem;
     box-sizing: border-box;
     opacity: 0;
     animation: text_show 2s forwards;
@@ -392,17 +428,6 @@
   }
 }
 
-@keyframes arrow_move {
-  0% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(3px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
 
 .visual_wrap {
   height: 100vh;
@@ -501,15 +526,15 @@
       overflow: hidden;
       transform: translateY(150px);
       opacity: 0;
-      transition: background-color .3s ease-in-out, transform .8s ease-in-out, opacity .8s ease-in-out;
+      transition: background-color .3s ease-in-out, transform 1s ease-in-out, opacity 1s ease-in-out;
       &:nth-child(2) {
-        transition: background-color .3s ease-in-out, transform 1.2s ease-in-out, opacity 1.2s ease-in-out;
+        transition: background-color .3s ease-in-out, transform 1s .2s ease-in-out, opacity 1s .2s ease-in-out;
       }
       &:nth-child(3) {
-        transition: background-color .3s ease-in-out, transform 1.6s ease-in-out, opacity 1.6s ease-in-out;
+        transition: background-color .3s ease-in-out, transform 1s .4s ease-in-out, opacity 1s .4s ease-in-out;
       }
       &:nth-child(4) {
-        transition: background-color .3s ease-in-out, transform 2s ease-in-out, opacity 2s ease-in-out;
+        transition: background-color .3s ease-in-out, transform 1s .6s ease-in-out, opacity 1s .6s ease-in-out;
       }
       &:hover {
         background: #E4E4E6;
@@ -522,7 +547,7 @@
             background-position: top 40px left -30px;
           }
           &.item4 {
-            background-position: top 40px right 40px;
+            background-position: top 10px right 0px;
           }
         }
       }
@@ -547,19 +572,28 @@
         height: 100%;
         background: url('/images/main_img1.png') no-repeat;
         background-size: cover;
+        -webkit-background-size: cover;
         background-position: top 200px center;
+        background-position-x: 50%;
+        background-position-y: top 200px;
         transition: background-position .5s ease-in-out;
         &.item2 {
           background: url('/images/main_img2.png') no-repeat;
           background-position: top -60px left 300px;
+          background-position-x: left 300px;
+          background-position-y: top -60px;
         }
         &.item3 {
           background: url('/images/main_img3.png') no-repeat;
           background-position: top 60px left -60px;
+          background-position-x: left -60px;
+          background-position-y: top 60px;
         }
         &.item4 {
-          background: url('/images/main_img4.png') no-repeat;
-          background-position: top 60px right 20px;
+          background: url('/images/main_img5.png') no-repeat;
+          background-position: top 30px right 0px;
+          background-position-x: right 0px;
+          background-position-y: top 30px;
         }
         h5 {
           font-size: 2.4rem;
@@ -617,30 +651,56 @@
 
 
 // animation
+@keyframes arrow_move {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(3px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
 @keyframes notebook {
   0% {
     background-position: bottom -700px center;
+    background-position-x: 50%;
+    background-position-y: bottom -700px;
   }
   100% {
     background-position: bottom -300px center;
+    background-position-x: 50%;
+    background-position-y: bottom -300px;
   }
 }
 @keyframes notebook_1 {
   0% {
     background-position: bottom -700px center;
+    background-position-x: 50%;
+    background-position-y: bottom -700px;
   }
 
   100% {
     background-position: bottom -200px center;
+    background-position-x: 50%;
+    background-position-y: bottom -200px;
   }
 }
 @keyframes notebook_2 {
   0% {
     background-position: bottom -700px center;
+    background-position-x: 50%;
+    background-position-y: bottom -700px;
   }
 
   100% {
     background-position: bottom -100px center;
+    background-position-x: 50%;
+    background-position-y: bottom -100px;
   }
 }
 
@@ -661,7 +721,10 @@
   .main {
     .main_wrap {
       background-size: contain;
+      -webkit-background-size: contain;
       background-position: top center;
+      background-position-x: 50%;
+      background-position-y: top 0%;
     }
   }
 
@@ -700,7 +763,7 @@
             background-position: top -100px left 170px;
           }
           &.item4 {
-            background-position: top 160px right 20px;
+            background-position: top 160px right 0px;
           }
         }
       }
@@ -797,6 +860,7 @@
         .link_box {
           background-position: top 280px center;
           background-size: contain;
+          -webkit-background-size: contain;
           &.item2 {
             background-position: top -100px left;
           }
@@ -842,6 +906,7 @@
         .link_box {
           background-position: top 300px center;
           background-size: contain;
+          -webkit-background-size: contain;
           h5 { padding: 7rem 2rem 5rem 0; }
           p { padding-right: 2rem; }
           &.item2 {
